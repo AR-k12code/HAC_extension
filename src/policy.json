@@ -1,0 +1,18 @@
+{
+  "type": "object",
+
+  "properties": {
+
+    "SchoolId": {
+      "title": "The School Database ID Number",
+      "description": "This specifies which school to automatically default to.",
+      "type": "integer"
+    },
+    "DoNotUseEmail": {
+      "title": "Do not use the G Workspace Account as the username.",
+      "description": "Disable filling the username using the G Workspace Account.",
+      "type": "boolean"
+    }
+    
+  }
+}

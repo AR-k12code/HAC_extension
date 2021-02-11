@@ -1,0 +1,32 @@
+{
+  "name": "Home Access Center",
+  "author": "Scott Organ & Craig Millsap",
+  "version": "0.8",
+  "description": "Arkansas Public School students to automatically populate their school and username to assist in logging into Home Access Center.",
+  "manifest_version": 2,
+  "icons": { "16": "hac-16.png",
+           "48": "hac-48.png",
+          "128": "hac-128.png" },
+  "background" : {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "contentSettings",
+    "identity",
+    "identity.email",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "Click here to login to HAC!"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://hac20.esp.k12.ar.us/HomeAccess20/Account/LogOn?*"],
+      "js": ["content.js"]
+    }
+  ],
+  "storage": {
+    "managed_schema": "policy.json"
+  }
+}
