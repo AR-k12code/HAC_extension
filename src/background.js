@@ -21,7 +21,16 @@ chrome.storage.managed.get("SchoolId", function(value) {
 chrome.storage.managed.get("DoNotUseEmail", function(value) {
     if (value.DoNotUseEmail !== true) {
         chrome.identity.getProfileUserInfo(function(info){
-            emailAddress=info.email;
+            emailAddress = info.email;
+        });
+    }
+});
+
+chrome.storage.managed.get("UsernameOnly", function(value) {
+    if (value.UsernameOnly === true) {
+        chrome.identity.getProfileUserInfo(function(info){
+            emailAddress = info.email
+            emailAddress = emailAddress.substring(0, emailAddress.lastIndexOf("@"));;
         });
     }
 });

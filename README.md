@@ -13,11 +13,13 @@
 ````
 {
     "SchoolId": { "Value":  1020 },
-    "DoNotUseEmail": { "Value": false }
+    "DoNotUseEmail": { "Value": false },
+    "UsernameOnly": { "Value": false }
 }
 ````
 * SchoolId - is the value for your school district.
 * DoNotUseEmail - Set to true if you don't want to populate the username box with their email address.
+* UsernameOnly - Set to true to use the username only from the G Workspace account. cmillsap@domain.com woudl be cmillsap
 
 # Possible SchoolId values
 ````

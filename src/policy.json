@@ -12,6 +12,11 @@
       "title": "Do not use the G Workspace Account as the username.",
       "description": "Disable filling the username using the G Workspace Account.",
       "type": "boolean"
+    },
+    "UsernameOnly": {
+      "title": "Use the username part only on the G Workspace Account.",
+      "description": "Use only the Username from the G Workspace Account. Everything before the @",
+      "type": "boolean"
     }
     
   }
