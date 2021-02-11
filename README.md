@@ -12,7 +12,7 @@
 ## On the right under Policy for extensions:
 ````
 {
-    "SchoolId": { "Value":  1020 }
+    "SchoolId": { "Value":  1020 },
     "DoNotUseEmail": { "Value": false }
 }
 ````
