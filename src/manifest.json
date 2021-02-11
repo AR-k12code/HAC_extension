@@ -1,7 +1,7 @@
 {
   "name": "Home Access Center",
   "author": "Scott Organ & Craig Millsap",
-  "version": "0.8",
+  "version": "0.9",
   "description": "Arkansas Public School students to automatically populate their school and username to assist in logging into Home Access Center.",
   "manifest_version": 2,
   "icons": { "16": "hac-16.png",
