@@ -19,7 +19,7 @@
 ````
 * SchoolId - is the value for your school district.
 * DoNotUseEmail - Set to true if you don't want to populate the username box with their email address.
-* UsernameOnly - Set to true to use the username only from the G Workspace account. cmillsap@domain.com woudl be cmillsap
+* UsernameOnly - Set to true to use the username only from the G Workspace account. cmillsap@domain.com would be cmillsap
 
 # Possible SchoolId values (Updated 8/2021)
 ````

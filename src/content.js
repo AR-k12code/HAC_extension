@@ -1,19 +1,19 @@
 var district = document.querySelector("[id=Database]");
 var username = document.querySelector("[id=LogOnDetails_UserName]");
-var htmlEvent = document.createEvent("HTMLEvents");
-
-htmlEvent.initEvent("change", true, true);
+let options;
 
 chrome.runtime.sendMessage({config: "district"}, function(response) {
+    options = {}
+    Array.from(document.querySelectorAll("#Database option")).map(e => {options[e.innerText] = parseInt(e.value)})
     if (response.district != null) {
-        district.value = response.district;
-        district.dispatchEvent(htmlEvent);
+        district.value = options[response.district];
+    }else{
+        district.value = options["Gentry School District"];
     }
 });
 
 chrome.runtime.sendMessage({config: "email"}, function(response) {
     if (response.email != null) {
         username.value = response.email;
-        username.dispatchEvent(htmlEvent);
     }
 });

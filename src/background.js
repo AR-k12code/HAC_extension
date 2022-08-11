@@ -1,7 +1,7 @@
 var emailAddress;
 var districtValue;
 
-chrome.browserAction.onClicked.addListener(function(activeTab){
+chrome.action.onClicked.addListener(function(activeTab){
     chrome.tabs.create({url: "https://hac20.esp.k12.ar.us/HomeAccess20/"});
 });
 
