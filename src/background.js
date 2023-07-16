@@ -2,20 +2,20 @@ var emailAddress;
 var districtValue;
 
 chrome.action.onClicked.addListener(function(activeTab){
-    chrome.tabs.create({url: "https://hac20.esp.k12.ar.us/HomeAccess20/"});
+    chrome.tabs.create({url: "https://hac23.esp.k12.ar.us/HomeAccess"});
 });
 
 chrome.storage.managed.get("SchoolId", function(value) {
-    //console.log(value);
-    //console.debug(value);
+    // console.log(value);
+    // console.debug(value);
 
     if (value != null) {
         districtValue = value.SchoolId;
     } else {
         // Since we're not pulling anything from admin.google.com yet, set this to Gentry, just to prove it's working
-        districtValue = 1020;
+        districtValue = "Gentry Public Schools";
     }
-
+    
 });
 
 chrome.storage.managed.get("DoNotUseEmail", function(value) {

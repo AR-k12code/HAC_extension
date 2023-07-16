@@ -7,9 +7,11 @@ chrome.runtime.sendMessage({config: "district"}, function(response) {
     Array.from(document.querySelectorAll("#Database option")).map(e => {options[e.innerText] = parseInt(e.value)})
     if (response.district != null) {
         district.value = options[response.district];
-    }else{
+    } else {
         district.value = options["Gentry School District"];
     }
+
+    console.log(district.value);
 });
 
 chrome.runtime.sendMessage({config: "email"}, function(response) {
