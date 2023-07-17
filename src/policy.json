@@ -4,9 +4,9 @@
   "properties": {
 
     "SchoolId": {
-      "title": "The School Database ID Number",
+      "title": "The School Database Name",
       "description": "This specifies which school to automatically default to.",
-      "type": "integer"
+      "type": "string"
     },
     "DoNotUseEmail": {
       "title": "Do not use the G Workspace Account as the username.",

@@ -1,25 +1,25 @@
 # Home Access Center Extension
 
-> Special Thanks to Scott Organ for helping make this happen!
+> Special Thanks to Scott Organ and Matthew Anderson for helping make this happen!
 
 ## Admin Console Settings
 1. Under Devices > Chrome > Apps & extensions
 2. Select the Organization Unit you want to manage settings for.
 3. Add from Chrome Web Store
-4. Insert 'ggkfnphpjhmlhbinjfdingbhjdkofghp' in the "View app by ID" box as the extension is unpublished.
+4. Insert 'fjhfhjenflmchlpjffaielkjjhnoojke' in the "View app by ID" box as the extension is unpublished.
 5. Change app to Force Installed (Pinned optional)
 
 ## On the right under Policy for extensions:
 ````
 {
-    "SchoolId": { "Value":  1020 },
+    "SchoolId": { "Value":  "Gentry School District" },
     "DoNotUseEmail": { "Value": false },
     "UsernameOnly": { "Value": false }
 }
 ````
-* SchoolId - is the value for your school district.
+* SchoolId - is the value for your school district. This must match EXACTLY!
 * DoNotUseEmail - Set to true if you don't want to populate the username box with their email address.
-* UsernameOnly - Set to true to use the username only from the G Workspace account. cmillsap@domain.com woudl be cmillsap
+* UsernameOnly - Set to true to use the username only from the G Workspace account. cmillsap@domain.com would be cmillsap
 
 # Possible SchoolId values (Updated 8/2021)
 ````
